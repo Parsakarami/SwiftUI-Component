@@ -24,10 +24,21 @@ struct ShowRoom: View {
                         .clipShape(.capsule)
                 })
             }
+            .frame(maxWidth: .infinity ,maxHeight: .infinity)
+            .opacity(showSideMenu ? 0.75 : 1)
+            .blur(radius: showSideMenu ? 3 : 0)
             .zIndex(0)
-            .padding()
             
-            SideMenu(isShowMenu: $showSideMenu, userName: "Jenna Smith", profile: "Profile", bgColors: [.blue,.black,.black])
+            SideMenu(
+                isShowMenu: $showSideMenu,
+                userName: "Jenna Smith",
+                profile: "Profile",
+                bgColors: [
+                    .blue,
+                    .black,
+                    .black
+                ]
+            )
         }
     }
 }
