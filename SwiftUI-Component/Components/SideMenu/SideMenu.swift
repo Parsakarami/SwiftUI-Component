@@ -12,7 +12,7 @@ struct SideMenu: View {
     @State var userName: String
     @State var profile : String
     @State var bgColors : [Color]
-    @State var sideBarWidth : CGFloat
+    @State var sideBarWidth : CGFloat = UIScreen.main.bounds.width - 120
     
     var body: some View {
         VStack (alignment: .leading){
@@ -103,6 +103,5 @@ struct SideMenu: View {
     SideMenu(isShowMenu: .constant(true),
              userName: "Username",
              profile: "Profile",
-             bgColors: [.blue,.black,.black],
-             sideBarWidth: UIScreen.main.bounds.width - 120)
+             bgColors: [.blue,.black,.black])
 }

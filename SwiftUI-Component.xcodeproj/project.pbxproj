@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		42D689042B65508000610767 /* SwiftUI_ComponentApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D689032B65508000610767 /* SwiftUI_ComponentApp.swift */; };
-		42D689062B65508000610767 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D689052B65508000610767 /* ContentView.swift */; };
+		42D689062B65508000610767 /* ShowRoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D689052B65508000610767 /* ShowRoom.swift */; };
 		42D689082B65508100610767 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42D689072B65508100610767 /* Assets.xcassets */; };
 		42D6890B2B65508100610767 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42D6890A2B65508100610767 /* Preview Assets.xcassets */; };
 		42D689132B6550C900610767 /* SideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D689122B6550C900610767 /* SideMenu.swift */; };
@@ -19,7 +19,7 @@
 /* Begin PBXFileReference section */
 		42D689002B65508000610767 /* SwiftUI-Component.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-Component.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		42D689032B65508000610767 /* SwiftUI_ComponentApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_ComponentApp.swift; sourceTree = "<group>"; };
-		42D689052B65508000610767 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		42D689052B65508000610767 /* ShowRoom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowRoom.swift; sourceTree = "<group>"; };
 		42D689072B65508100610767 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		42D6890A2B65508100610767 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		42D689122B6550C900610767 /* SideMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenu.swift; sourceTree = "<group>"; };
@@ -59,7 +59,7 @@
 			children = (
 				42D689112B65509000610767 /* Components */,
 				42D689032B65508000610767 /* SwiftUI_ComponentApp.swift */,
-				42D689052B65508000610767 /* ContentView.swift */,
+				42D689052B65508000610767 /* ShowRoom.swift */,
 				42D689072B65508100610767 /* Assets.xcassets */,
 				42D689092B65508100610767 /* Preview Content */,
 			);
@@ -164,7 +164,7 @@
 			files = (
 				42D689132B6550C900610767 /* SideMenu.swift in Sources */,
 				42D689162B65514800610767 /* SideMenuLink.swift in Sources */,
-				42D689062B65508000610767 /* ContentView.swift in Sources */,
+				42D689062B65508000610767 /* ShowRoom.swift in Sources */,
 				42D689042B65508000610767 /* SwiftUI_ComponentApp.swift in Sources */,
 				42D689182B65516800610767 /* SideMenuButton.swift in Sources */,
 			);
