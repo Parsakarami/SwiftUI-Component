@@ -101,7 +101,7 @@ struct SideMenu: View {
 
 #Preview {
     SideMenu(isShowMenu: .constant(true),
-             userName: "Username",
+             userName: "Jenna Smith",
              profile: "Profile",
              bgColors: [.blue,.black,.black])
 }
