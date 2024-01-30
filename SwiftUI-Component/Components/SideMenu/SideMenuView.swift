@@ -63,9 +63,11 @@ struct SideMenuView: View {
             withAnimation(
                 .snappy(duration: 1)
                 .repeatForever(autoreverses: true)) {
-                showAnimation = true
-            }
+                    showAnimation = true
+                }
         }
+        .navigationTitle("Side Menu")
+        .navigationBarTitleDisplayMode(.inline)
     }
 }
 
