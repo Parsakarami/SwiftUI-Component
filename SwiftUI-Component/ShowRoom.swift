@@ -22,6 +22,16 @@ struct ShowRoom: View {
                             .foregroundStyle(.white)
                             .clipShape(.capsule)
                     }
+                    
+                    NavigationLink {
+                        PhotoPickerView(selectedImage: .constant(nil))
+                    } label: {
+                        Text("Photo Picker")
+                            .frame(width: 200,height:40)
+                            .background(.indigo)
+                            .foregroundStyle(.white)
+                            .clipShape(.capsule)
+                    }
                 }
                 .frame(maxWidth: .infinity ,maxHeight: .infinity)
             }
