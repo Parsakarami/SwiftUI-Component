@@ -13,6 +13,12 @@ Get started now and elevate your app's UI to new heights! 🔗 Explore the Compo
 
 <h2>ScreenShots</h2>
 <div style="text-alignment: center">
-  <h3>SideMenu</h3>
+  <h3>Side Menu</h3>
   <img src="https://github.com/Parsakarami/SwiftUI-Component/blob/main/ScreenShots/SideMenu/SideMenuLight.png" width="200" />
   <img src="https://github.com/Parsakarami/SwiftUI-Component/blob/main/ScreenShots/SideMenu/SideMenuDark.png" width="200" />
+  
+  <h3>Photo Picker</h3>
+  <img src="https://github.com/Parsakarami/SwiftUI-Component/blob/main/ScreenShots/PhotoPicker/PhotoPickerLight.png" width="150" />
+  <img src="https://github.com/Parsakarami/SwiftUI-Component/blob/main/ScreenShots/PhotoPicker/PhotoPickerSelectedLight.png" width="150" />
+  <img src="https://github.com/Parsakarami/SwiftUI-Component/blob/main/ScreenShots/PhotoPicker/PhotoPickerDark.png" width="150" />
+  <img src="https://github.com/Parsakarami/SwiftUI-Component/blob/main/ScreenShots/PhotoPicker/PhotoPickerSelectedDark.png" width="150" />
