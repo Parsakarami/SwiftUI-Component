@@ -6,13 +6,17 @@
 //
 
 import SwiftUI
+import Foundation
+
+class PhotoPickerViewModel : ObservableObject {
+    @Published var selectedImage : UIImage? = nil
+}
 
 struct PhotoPickerView: View {
-    @Binding var selectedImage : UIImage?
-    
+    @StateObject var viewModel = PhotoPickerViewModel()
     var body: some View {
         VStack{
-            PhotoPickerPreview(selectedImage: $selectedImage)
+            PhotoPickerPreview(selectedImage: $viewModel.selectedImage)
         }
         .navigationTitle("Photo Picker")
         .navigationBarTitleDisplayMode(.inline)
@@ -20,5 +24,5 @@ struct PhotoPickerView: View {
 }
 
 #Preview {
-    PhotoPickerView(selectedImage: .constant(nil))
+    PhotoPickerView()
 }

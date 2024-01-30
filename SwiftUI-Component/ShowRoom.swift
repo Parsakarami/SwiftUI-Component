@@ -24,7 +24,7 @@ struct ShowRoom: View {
                     }
                     
                     NavigationLink {
-                        PhotoPickerView(selectedImage: .constant(nil))
+                        PhotoPickerView()
                     } label: {
                         Text("Photo Picker")
                             .frame(width: 200,height:40)
