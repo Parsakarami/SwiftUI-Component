@@ -30,6 +30,7 @@ struct PhotoPickerPreview: View {
                         isImagePickerPresented.toggle()
                     }){
                         Label("Replace",systemImage: "paperclip")
+                            .foregroundStyle(.indigo)
                             .padding(5)
                     }
                 }
