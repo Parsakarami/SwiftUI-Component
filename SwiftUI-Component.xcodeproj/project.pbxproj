@@ -15,6 +15,9 @@
 		42D689132B6550C900610767 /* SideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D689122B6550C900610767 /* SideMenu.swift */; };
 		42D689162B65514800610767 /* SideMenuLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D689152B65514800610767 /* SideMenuLink.swift */; };
 		42D689182B65516800610767 /* SideMenuButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D689172B65516800610767 /* SideMenuButton.swift */; };
+		42DEC0732B693F6D00CDCFF9 /* PhotoPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DEC0722B693F6D00CDCFF9 /* PhotoPickerView.swift */; };
+		42DEC0752B693FDD00CDCFF9 /* PhotoPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DEC0742B693FDD00CDCFF9 /* PhotoPicker.swift */; };
+		42DEC0772B69401100CDCFF9 /* PhotoPickerPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DEC0762B69401100CDCFF9 /* PhotoPickerPreview.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +30,9 @@
 		42D689122B6550C900610767 /* SideMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenu.swift; sourceTree = "<group>"; };
 		42D689152B65514800610767 /* SideMenuLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuLink.swift; sourceTree = "<group>"; };
 		42D689172B65516800610767 /* SideMenuButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuButton.swift; sourceTree = "<group>"; };
+		42DEC0722B693F6D00CDCFF9 /* PhotoPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPickerView.swift; sourceTree = "<group>"; };
+		42DEC0742B693FDD00CDCFF9 /* PhotoPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPicker.swift; sourceTree = "<group>"; };
+		42DEC0762B69401100CDCFF9 /* PhotoPickerPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPickerPreview.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +85,7 @@
 		42D689112B65509000610767 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				42DEC0712B693EC100CDCFF9 /* PhotoPicker */,
 				42D689142B65513200610767 /* SideMenu */,
 			);
 			path = Components;
@@ -93,6 +100,16 @@
 				4256155C2B683291007DF788 /* SideMenuView.swift */,
 			);
 			path = SideMenu;
+			sourceTree = "<group>";
+		};
+		42DEC0712B693EC100CDCFF9 /* PhotoPicker */ = {
+			isa = PBXGroup;
+			children = (
+				42DEC0722B693F6D00CDCFF9 /* PhotoPickerView.swift */,
+				42DEC0742B693FDD00CDCFF9 /* PhotoPicker.swift */,
+				42DEC0762B69401100CDCFF9 /* PhotoPickerPreview.swift */,
+			);
+			path = PhotoPicker;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,11 +182,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42DEC0772B69401100CDCFF9 /* PhotoPickerPreview.swift in Sources */,
 				4256155D2B683291007DF788 /* SideMenuView.swift in Sources */,
 				42D689132B6550C900610767 /* SideMenu.swift in Sources */,
 				42D689162B65514800610767 /* SideMenuLink.swift in Sources */,
 				42D689062B65508000610767 /* ShowRoom.swift in Sources */,
+				42DEC0752B693FDD00CDCFF9 /* PhotoPicker.swift in Sources */,
 				42D689042B65508000610767 /* SwiftUI_ComponentApp.swift in Sources */,
+				42DEC0732B693F6D00CDCFF9 /* PhotoPickerView.swift in Sources */,
 				42D689182B65516800610767 /* SideMenuButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
