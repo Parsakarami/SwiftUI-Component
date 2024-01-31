@@ -12,55 +12,91 @@ struct ShowRoom: View {
     @Environment(\.verticalSizeClass) var verticalSizeClass
     var body: some View {
         if horizontalSizeClass == .regular && verticalSizeClass == .regular {
-            NavigationSplitView {
-                ZStack {
-                    LinearGradient(colors:[.indigo,.black,.black], startPoint: .topLeading, endPoint: .bottomTrailing)
-                    NavigationLink(destination: PhotoPickerView(), label: {
-                        HStack {
-                            Image(systemName: "photo.on.rectangle.angled")
-                            Text("Photo Picker")
-                        }
-                        .padding()
-                        .frame(alignment: .leading)
-                    })
-                    .tint(.white)
-                    
-                }
-                .ignoresSafeArea()
-            } detail: {
-                Text("The app is running from the Mac or iPad.")
-            }
+            iPadShowRoomView()
         } else {
-            NavigationView {
-                ZStack {
-                    VStack {
-                        NavigationLink {
-                            SideMenuView()
-                        } label: {
-                            Text("Side Menu")
-                                .frame(width: 200,height:40)
-                                .background(.indigo)
-                                .foregroundStyle(.white)
-                                .clipShape(.capsule)
-                        }
-                        
-                        NavigationLink {
-                            PhotoPickerView()
-                        } label: {
-                            Text("Photo Picker")
-                                .frame(width: 200,height:40)
-                                .background(.indigo)
-                                .foregroundStyle(.white)
-                                .clipShape(.capsule)
-                        }
-                    }
-                    .frame(maxWidth: .infinity ,maxHeight: .infinity)
-                }
-            }
+            iPhoneShowRoomView()
         }
     }
 }
 
 #Preview {
     ShowRoom()
+}
+
+struct iPadShowRoomView: View {
+    var body: some View {
+        NavigationSplitView {
+            ZStack {
+                LinearGradient(colors:[.indigo,.black,.black], startPoint: .topLeading, endPoint: .bottomTrailing)
+                
+                VStack{
+                    iPadSideMenuLink(destination: AnyView(PhotoPickerView()), title: "Photo Picker", icon: "photo.on.rectangle.angled")
+                    
+                    iPadSideMenuLink(destination: AnyView(SideMenuView()), title: "Side Menu", icon: "hand.point.up.left.fill")
+                }
+            }
+            .ignoresSafeArea()
+        } detail: {
+            Text("The app is running from the Mac or iPad.")
+        }
+    }
+}
+
+struct iPhoneShowRoomView: View {
+    var body: some View {
+        NavigationView {
+            ZStack {
+                VStack {
+                    NavigationLink {
+                        SideMenuView()
+                    } label: {
+                        Text("Side Menu")
+                            .frame(width: 200,height:40)
+                            .background(.indigo)
+                            .foregroundStyle(.white)
+                            .clipShape(.capsule)
+                    }
+                    
+                    NavigationLink {
+                        PhotoPickerView()
+                    } label: {
+                        Text("Photo Picker")
+                            .frame(width: 200,height:40)
+                            .background(.indigo)
+                            .foregroundStyle(.white)
+                            .clipShape(.capsule)
+                    }
+                }
+                .frame(maxWidth: .infinity ,maxHeight: .infinity)
+            }
+        }
+    }
+}
+
+struct iPadSideMenuLink: View {
+    @State var destination : AnyView
+    @State var title : String
+    @State var icon : String
+    var body: some View {
+        NavigationLink(destination:destination, label: {
+            HStack {
+                Spacer()
+                Image(systemName: icon)
+                    .frame(minWidth: 30, maxWidth: 30)
+                    .padding(.leading,15)
+                Text(title)
+                    .padding(.leading,10)
+                Spacer()
+                Spacer()
+                Image(systemName: "chevron.right")
+                    .padding(.trailing)
+            }
+            .padding()
+            .frame(alignment: .leading)
+            .padding(.leading)
+        })
+        .background(.gray.opacity(0.15))
+        .tint(.white)
+        .frame(maxWidth: .infinity)
+    }
 }
