@@ -30,10 +30,23 @@ struct iPadShowRoomView: View {
                 LinearGradient(colors:[.indigo,.black,.black], startPoint: .topLeading, endPoint: .bottomTrailing)
                 
                 VStack{
+                    Spacer()
                     iPadSideMenuLink(destination: AnyView(PhotoPickerView()), title: "Photo Picker", icon: "photo.on.rectangle.angled")
                     
                     iPadSideMenuLink(destination: AnyView(SideMenuView()), title: "Side Menu", icon: "hand.point.up.left.fill")
-                }
+                    
+                    
+                    Spacer()
+                        HStack {
+                            Spacer(minLength: 90)
+                            Text("Find components source codes in the Github.")
+                                .foregroundStyle(.white)
+                                .font(.caption2)
+                                .tint(.white)
+                                .frame(maxWidth: .infinity)
+                                .padding(.bottom)
+                        }
+                    }
             }
             .ignoresSafeArea()
         } detail: {
@@ -67,7 +80,7 @@ struct iPhoneShowRoomView: View {
                             .clipShape(.capsule)
                     }
                 }
-                .frame(maxWidth: .infinity ,maxHeight: .infinity)
+                .frame(maxWidth: .infinity, maxHeight: .infinity)
             }
         }
     }
